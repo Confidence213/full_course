@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.6_New_note</title>
+</head>
+<body>
+    <div class=wsd wsd_style="default"><pre>
+        title 0.6 New_note
+
+        note over browser:
+        User fills and submit the form
+        end note
+
+        note over browser:
+        Browser gets the form element data
+        and updates the DOM element to re-render
+        the notes_form via js
+        end note
+
+        note over browser:
+        The new note then sent to the server
+        as JSON-string {content: "test", date: "2021-08-11T12:02:04.027Z"}
+        end note
+
+        browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+        note over server:
+        Server parses the request,
+        add the new note to the notes list 
+        on the server and respond by giving 
+        HTTP status code 201 and {"message":"note created"}
+        end note
+
+        server-->browser: HTTP Status code 201 - {"message":"note created"}
+
+    </pre></div><script type="text/javascript" src="https://www.websequencediagrams.com/service.js"></script>
+</body>
+</html>

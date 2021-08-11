@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.4_New_note</title>
+</head>
+<body>
+    <div class=wsd wsd_style="default"><pre>
+        title 0.4 New Note
+
+        note over browser:
+        User fills and submit the form in /notes
+        end note
+
+        note over browser:
+        Save user input of text as the body of the form,
+        initiate the POST request
+        end note
+
+        browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note (form data)
+
+        note over server:
+        Server receive the POST request, accessing the
+        body of the form with req.body create a new note object
+        and adds it to notes array, updating the array to display later
+        respond by sending HTTP status code 302 to redirect
+        end note
+
+        server-->browser: HTTP status code 302 - redirect URL to https://studies.cs.helsinki.fi/exampleapp/notes
+
+        note over browser:
+        Asking to do a new get request to /notes (refreshes the page)
+        end note
+
+        browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+        server-->browser: HTML-code for /notes
+        browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+        server-->browser: main.css
+        browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+        server-->browser: main.js
+
+        note over browser:
+        Browser applying main.css and starts executing main.js
+        that requests JSON data from server 
+        end note
+
+        browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+        note over server:
+        Server returns the updated list of notes in data.json
+        end note
+
+        server-->browser: [{ content: "test", date: "2021-08-11T12:02:04.027Z" }, ...]
+
+        note over browser:
+        browser executes the event handler
+        that renders notes to display
+        end note
+
+    </pre></div><script type="text/javascript" src="https://www.websequencediagrams.com/service.js"></script>
+</body>
+</html>
