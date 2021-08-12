@@ -4,6 +4,17 @@
 
 ### Exercise: Sequence diagram of browser and server interaction
 
+### Side note from me
+
+This first exercise, encourage the use of chrome(or any browser dev tools) 
+to know how a website or web app works, by analysing the network data, 
+reading the response, etc and of course careful reading of the materials 
+and codes. We are asked to make a sequence diagram or other media that 
+can represent the interaction between browser and server, 
+and what happens when we click a certain part of it.
+
+### Exercise Details
+
 ### Exercise 0.4: new note
 
 In chapter Loading a page containing JavaScript
