@@ -19,16 +19,35 @@ const App = () => {
     'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
     'Programming without an extremely heavy use of console.log is same as if a doctor would refuse to use x-rays or blood tests when diagnosing patients'
   ]
-  const voteCount = [...anecdotes]
+  
   const [selected, setSelected] = useState(0)
+  // Create a zero filled array of 6 length to display the state individually
+  const [points, setPoints] = useState(new Uint8Array(anecdotes.length))
+  const [mostVoted, setMostVoted] = useState(0)
+
+
+  const handleVoteClick = () => {
+    const voteValue = {...points}
+    voteValue[selected] += 1
+    setPoints(voteValue)
+    // Set the most voted value by comparing the latest value in most voted which is selected beforehand
+    if (points[selected] > points[mostVoted]) {
+      setMostVoted(selected)
+    }
+  }
+
 
   return (
     <div>
+      <h1>Anecdote of the day</h1>
       {anecdotes[selected]}
+      <p>has {points[selected]} votes</p>
       <div>
-      <Button handleClick={() => {voteCount()}} text='Vote'/>
+      <Button handleClick={handleVoteClick} text='Vote'/>
       <Button handleClick={() => {setSelected(Math.floor(Math.random() * anecdotes.length))}} text='Next Anecdotes' />
       </div>
+      <h1>Anecdote with most votes</h1>
+      <p>{anecdotes[mostVoted]}</p>
     </div>
   )
 }
