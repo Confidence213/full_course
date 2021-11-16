@@ -14,6 +14,23 @@ to this course or vice versa.
 
 ## Course Overview
 
+- [Full Stack Open 2021](#full-stack-open-2021)
+  - [University of Helsinki Full Stack Open 2021 Course](#university-of-helsinki-full-stack-open-2021-course)
+  - [Side note](#side-note)
+  - [Course Overview](#course-overview)
+  - [Part 0 Fundamentals of Web apps](#part-0-fundamentals-of-web-apps)
+  - [Part 1 Introduction to React](#part-1-introduction-to-react)
+  - [Part 2 Communicating with server](#part-2-communicating-with-server)
+  - [Part 3 Programming a server with NodeJS and Express](#part-3-programming-a-server-with-nodejs-and-express)
+  - [Part 4 Testing Express servers, user administration](#part-4-testing-express-servers-user-administration)
+  - [Part 5 Testing React apps](#part-5-testing-react-apps)
+  - [Part 6 State management with Redux](#part-6-state-management-with-redux)
+  - [Part 7 React router, custom hooks, styling app with CSS and webpack](#part-7-react-router-custom-hooks-styling-app-with-css-and-webpack)
+  - [Part 8 GraphQL](#part-8-graphql)
+  - [Part 9 TypeScript](#part-9-typescript)
+  - [Part 10 React Native](#part-10-react-native)
+  - [Part 11 CI/CD](#part-11-cicd)
+
 ## Part 0 Fundamentals of Web apps
 
 1. General info
@@ -56,12 +73,14 @@ to this course or vice versa.
 4. End to end testing
 
 ## Part 6 State management with Redux
+
 1. Flux-architecture and Redux
 2. Many reducers
 3. Communicaating with server in a redux application
 4. connect
 
 ## Part 7 React router, custom hooks, styling app with CSS and webpack
+
 1. React-router
 2. Custom hooks
 3. More about styles
@@ -70,6 +89,7 @@ to this course or vice versa.
 6. Exercises: extending the bloglist
 
 ## Part 8 GraphQL
+
 1. GraphQL-server
 2. React and GraphQL
 3. Database and user administration
@@ -77,25 +97,23 @@ to this course or vice versa.
 5. Fragments and subscriptions
 
 ## Part 9 TypeScript
+
 1. Background and introduction
 2. First steeps with TypeScript
 3. Typing the express app
 4. React with types
 
 ## Part 10 React Native
+
 1. Introduction to React Native
 2. React Native basics
 3. Communicating with server
 4. Testing and extending oue application
 
 ## Part 11 CI/CD
+
 1. Introduction to CI/CD
 2. Getting started with GitHub Actions
 3. Deployments
 4. Keeping green
 5. Expanding further
-
-
-
-
-
